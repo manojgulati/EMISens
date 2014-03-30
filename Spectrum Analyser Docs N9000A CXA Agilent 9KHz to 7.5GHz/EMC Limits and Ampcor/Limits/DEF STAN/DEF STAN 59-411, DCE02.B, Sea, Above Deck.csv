@@ -1,0 +1,29 @@
+Limit
+"DEF STAN 59-411, DCE02.B"
+"Sea Service, Above Deck"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuA
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.0005000, 130.00
+0.0040000, 130.00
+0.1000000, 40.00
+1.0000000, 0.00
+100.00000, 0.00
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+Amplitude Correction
+"10 Meter Type-N Cable (30 MHz to 1 GHz)"
+""
+,
+,01
+Frequency Unit,MHz
+Antenna Unit,None
+Frequency Interpolation,Linear
+DATA
+30.000000,0.00
+30.000000,0.30
+500.00000,1.60
+1000.0000,2.30
+1000.0000,0.00

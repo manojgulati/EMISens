@@ -1,0 +1,23 @@
+* C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_9_Final.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Feb 22 11:11:53 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 10 350.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "FLT_9_Final.net"
+.INC "FLT_9_Final.als"
+
+
+.probe
+
+
+.END

@@ -1,0 +1,28 @@
+Limit
+"EN 55011, Radiated, Class B, Group 2 (10m)"
+"Quasi-Peak Detector"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuV
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+30.000000,30.00
+80.872000,30.00
+80.872000,50.00
+81.848000,50.00
+81.848000,30.00
+134.78600,30.00
+134.78600,50.00
+136.41400,50.00
+136.41400,30.00
+230.00000,30.00
+230.00000,37.00
+1000.0000,37.00

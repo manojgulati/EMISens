@@ -1,0 +1,23 @@
+* C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.6\Differential_filter(680Vpp)_test_manoj.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Mar 16 11:19:05 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 10 1000Khz
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Differential_filter(680Vpp)_test_manoj.net"
+.INC "Differential_filter(680Vpp)_test_manoj.als"
+
+
+.probe
+
+
+.END

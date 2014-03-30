@@ -1,0 +1,28 @@
+Limit
+"AS/NZS 2064, Radiated, Class A, Group 2, MagField (10m)"
+"Quasi-Peak Detector"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuA/m
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.15000,57.50
+0.49000,57.50
+0.49000,47.50
+1.70500,47.50
+1.70500,52.50
+2.19400,52.50
+2.19400,43.50
+3.95000,43.50
+3.95000,18.50
+20.0000,18.50
+20.0000,8.50
+30.0000,8.50

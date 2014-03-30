@@ -1,0 +1,28 @@
+Limit
+"DEF STAN 59-411, DCE02.B"
+"Air Service"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuA
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.0000200, 130.00
+0.0020000, 130.00
+0.0500000, 50.00
+0.5000000, 20.00
+150.00000, 20.00
+
+
+
+
+
+
+

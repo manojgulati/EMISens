@@ -1,0 +1,19 @@
+Limit
+"MIL-STD-461F RE102-3 Radiated, Aircraft"
+"Fixed Wing Internal, GTE 25m"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuV
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+2.000000, 44.00
+100.000000, 44.00
+18000.0000, 89.00

@@ -1,0 +1,21 @@
+Limit
+"EN 55011, Conducted, Class B, Group 1"
+"Average Detector"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuV
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.150000,56.00
+0.500000,46.00
+5.000000,46.00
+5.000000,50.00
+30.00000,50.00

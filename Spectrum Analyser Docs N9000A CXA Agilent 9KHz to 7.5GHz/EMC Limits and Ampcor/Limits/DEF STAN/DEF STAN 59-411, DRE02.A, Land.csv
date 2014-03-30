@@ -1,0 +1,21 @@
+Limit
+"DEF STAN 59-411, DRE02.A"
+"Land Service"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBpT
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.0005000, 140.00
+0.0040000, 140.00
+0.2500000, 26.00
+
+

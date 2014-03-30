@@ -1,0 +1,124 @@
+
+**** 02/22/14 11:57:36 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_9_Final.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Feb 22 11:11:53 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 10 350.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "FLT_9_Final.net"
+
+**** INCLUDING FLT_9_Final.net ****
+* Schematics Netlist *
+
+
+
+C_C1         $N_0001 $N_0002  .1uF  
+V_V4         $N_0001 0 DC 0V AC 10V 
+V_V7         0 $N_0003 DC 0V AC 10V 
+R_R1         0 $N_0002  200  
+R_R16         $N_0004 0  200  
+C_C5         $N_0003 $N_0004  .1uF  
+R_R17         $N_0002 $N_0005  50  
+R_R20         $N_0006 $N_0004  50  
+R_R19         $N_0006 0  50  
+R_R18         0 $N_0005  50  
+
+**** RESUMING FLT_9_Final.cir ****
+.INC "FLT_9_Final.als"
+
+
+
+**** INCLUDING FLT_9_Final.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_C1            C1(1=$N_0001 2=$N_0002 )
+V_V4            V4(+=$N_0001 -=0 )
+V_V7            V7(+=0 -=$N_0003 )
+R_R1            R1(1=0 2=$N_0002 )
+R_R16           R16(1=$N_0004 2=0 )
+C_C5            C5(1=$N_0003 2=$N_0004 )
+R_R17           R17(1=$N_0002 2=$N_0005 )
+R_R20           R20(1=$N_0006 2=$N_0004 )
+R_R19           R19(1=$N_0006 2=0 )
+R_R18           R18(1=0 2=$N_0005 )
+.ENDALIASES
+
+
+**** RESUMING FLT_9_Final.cir ****
+.probe
+
+
+.END
+
+**** 02/22/14 11:57:36 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_9_Final.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   ($N_0004)    0.0000                       
+
+($N_0005)    0.0000                   ($N_0006)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+    V_V7         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/22/14 11:57:36 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_9_Final.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

@@ -1,0 +1,109 @@
+
+**** 03/01/14 23:16:22 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.5\Schematic2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Mar 01 17:08:52 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 10 500.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic2.net"
+
+**** INCLUDING Schematic2.net ****
+* Schematics Netlist *
+
+
+
+C_C1         0 $N_0001  .1u  
+R_R1         0 $N_0001  300  
+I_I1         0 $N_0002 DC 1A  
+R_R8         0 $N_0002  27  
+R_R7         $N_0001 $N_0002  50  
+
+**** RESUMING Schematic2.cir ****
+.INC "Schematic2.als"
+
+
+
+**** INCLUDING Schematic2.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_C1            C1(1=0 2=$N_0001 )
+R_R1            R1(1=0 2=$N_0001 )
+I_I1            I1(+=0 -=$N_0002 )
+R_R8            R8(1=0 2=$N_0002 )
+R_R7            R7(1=$N_0001 2=$N_0002 )
+.ENDALIASES
+
+
+**** RESUMING Schematic2.cir ****
+.probe
+
+
+.END
+
+**** 03/01/14 23:16:22 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.5\Schematic2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)   21.4850                   ($N_0002)   25.0660                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/01/14 23:16:22 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.5\Schematic2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+WARNING -- No AC sources -- AC Sweep ignored
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

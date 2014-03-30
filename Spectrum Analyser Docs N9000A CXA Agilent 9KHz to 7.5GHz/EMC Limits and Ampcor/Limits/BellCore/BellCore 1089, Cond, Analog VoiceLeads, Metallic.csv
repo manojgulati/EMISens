@@ -1,0 +1,22 @@
+Limit
+"BellCore 1089, Conducted, Analog Voice Leads, Metallic"
+""
+,
+,01
+Type, Upper
+X Axis Unit, kHz
+Amplitude Unit, dBuV
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+8.000000,102.20
+12.00000,100.00
+90.00000,65.00
+270.0000,65.00
+270.0000,105.00
+6000.000,105.00

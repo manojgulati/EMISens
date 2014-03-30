@@ -1,0 +1,24 @@
+Limit
+"FCC Part 15, Radiated, Class B (3m)"
+""
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, V
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+30.000000, 0.00010
+88.000000, 0.00010
+88.000000, 0.00015
+216.00000, 0.00015
+216.00000, 0.00020
+960.00000, 0.00020
+960.00000, 0.00050
+40000.000, 0.00050

@@ -1,0 +1,113 @@
+
+**** 02/22/14 01:03:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Omkar\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_6.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Feb 22 01:03:42 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 10 350.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "FLT_6.net"
+
+**** INCLUDING FLT_6.net ****
+* Schematics Netlist *
+
+
+
+V_V4         $N_0001 0 DC 0V AC 10V 
+C_C1         $N_0002 $N_0003  .1uF  
+R_R7         $N_0001 $N_0002  50  
+R_R10         $N_0003 $N_0004  68  
+R_R1         0 $N_0003  50  
+R_R8         0 $N_0004  37.5  
+
+**** RESUMING FLT_6.cir ****
+.INC "FLT_6.als"
+
+
+
+**** INCLUDING FLT_6.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V4            V4(+=$N_0001 -=0 )
+C_C1            C1(1=$N_0002 2=$N_0003 )
+R_R7            R7(1=$N_0001 2=$N_0002 )
+R_R10           R10(1=$N_0003 2=$N_0004 )
+R_R1            R1(1=0 2=$N_0003 )
+R_R8            R8(1=0 2=$N_0004 )
+.ENDALIASES
+
+
+**** RESUMING FLT_6.cir ****
+.probe
+
+
+.END
+
+**** 02/22/14 01:03:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Omkar\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_6.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   ($N_0004)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/22/14 01:03:42 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Omkar\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_6.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

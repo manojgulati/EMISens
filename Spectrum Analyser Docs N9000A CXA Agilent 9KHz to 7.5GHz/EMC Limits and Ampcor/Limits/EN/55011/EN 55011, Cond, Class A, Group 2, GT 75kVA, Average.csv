@@ -1,0 +1,22 @@
+Limit
+"EN 55011, Conducted, Class A, Group 2, GT 75 kVA"
+"Average Detector"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuV
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.150000,120.00
+0.500000,120.00
+0.500000,115.00
+5.000000,115.00
+5.000000,105.00
+30.00000,105.00

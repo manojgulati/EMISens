@@ -1,0 +1,18 @@
+Limit
+"EN 55014, Radiated, Mains, Motors, Greater Than 1000 W"
+"Average Detector"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuV
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+30.000000,61.99
+300.00000,71.99

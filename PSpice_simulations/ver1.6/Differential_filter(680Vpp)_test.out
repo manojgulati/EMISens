@@ -1,0 +1,119 @@
+
+**** 03/03/14 23:37:45 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.6\Differential_filter(680Vpp)_test.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Mar 03 23:37:45 2014
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Differential_filter(680Vpp)_test.net"
+
+**** INCLUDING Differential_filter(680Vpp)_test.net ****
+* Schematics Netlist *
+
+
+
+R_R17         $N_0002 $N_0001  75  
+C_C4         0 $N_0003  0.1u  
+C_C5         0 $N_0001  0.1u  
+I_I2         0 $N_0004 DC 1A  
+R_R12         $N_0003 $N_0004  75  
+I_I1         0 $N_0002 DC 1A  
+R_R13         0 $N_0003  33  
+R_R15         0 $N_0004  33  
+R_R14         $N_0001 0  33  
+R_R16         $N_0002 0  33  
+
+**** RESUMING Differential_filter(680Vpp)_test.cir ****
+.INC "Differential_filter(680Vpp)_test.als"
+
+
+
+**** INCLUDING Differential_filter(680Vpp)_test.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R17           R17(1=$N_0002 2=$N_0001 )
+C_C4            C4(1=0 2=$N_0003 )
+C_C5            C5(1=0 2=$N_0001 )
+I_I2            I2(+=0 -=$N_0004 )
+R_R12           R12(1=$N_0003 2=$N_0004 )
+I_I1            I1(+=0 -=$N_0002 )
+R_R13           R13(1=0 2=$N_0003 )
+R_R15           R15(1=0 2=$N_0004 )
+R_R14           R14(1=$N_0001 2=0 )
+R_R16           R16(1=$N_0002 2=0 )
+.ENDALIASES
+
+
+**** RESUMING Differential_filter(680Vpp)_test.cir ****
+.probe
+
+
+.END
+
+**** 03/03/14 23:37:45 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.6\Differential_filter(680Vpp)_test.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    7.7234                   ($N_0002)   25.2770                       
+
+($N_0003)    7.7234                   ($N_0004)   25.2770                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/03/14 23:37:45 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.6\Differential_filter(680Vpp)_test.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

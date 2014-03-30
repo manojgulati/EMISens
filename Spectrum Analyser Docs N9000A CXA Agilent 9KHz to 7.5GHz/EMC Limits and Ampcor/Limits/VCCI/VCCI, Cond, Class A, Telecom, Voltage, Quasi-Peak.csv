@@ -1,0 +1,19 @@
+Limit
+"VCCI, Conducted, Class A, Telecom, Voltage"
+"Quasi-Peak Detector"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuV
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.150000,97.00
+0.500000,87.00
+30.00000,87.00

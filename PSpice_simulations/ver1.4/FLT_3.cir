@@ -1,0 +1,23 @@
+* C:\Users\Omkar\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_3.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Feb 21 22:30:33 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 10 350.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "FLT_3.net"
+.INC "FLT_3.als"
+
+
+.probe
+
+
+.END

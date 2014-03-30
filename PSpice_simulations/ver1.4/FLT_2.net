@@ -1,0 +1,10 @@
+* Schematics Netlist *
+
+
+
+V_V4         $N_0001 0 DC 0V AC 10V 
+V_V6         0 $N_0002 DC 0V AC 10V 
+R_R1         0 $N_0003  50  
+R_R5         $N_0004 0  50  
+C_C3         $N_0002 $N_0004  .1uF  
+C_C1         $N_0001 $N_0003  .1uF  

@@ -1,0 +1,76 @@
+
+**** 02/18/14 20:59:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.3\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Feb 18 20:59:33 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 1K 350.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 DC 0V AC 115V 
+V_V2         0 $N_0002 DC 0V AC 115V 
+C_C1         $N_0001 $N_0003  .1u  
+C_C2         $N_0002 $N_0004  .1u  
+R_R2         $N_0004 $N_0003  100  
+R_R1         $N_0003 $N_0005  68  
+R_R3         $N_0004 $N_0005  71  
+C_C3         $N_0002 $N_0001  20n  
+C_C4         $N_0005 0  20n  
+C_C5         $N_0004 0  20n  
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+V_V2            V2(+=0 -=$N_0002 )
+C_C1            C1(1=$N_0001 2=$N_0003 )
+C_C2            C2(1=$N_0002 2=$N_0004 )
+R_R2            R2(1=$N_0004 2=$N_0003 )
+R_R1            R1(1=$N_0003 2=$N_0005 )
+R_R3            R3(1=$N_0004 2=$N_0005 )
+C_C3            C3(1=$N_0002 2=$N_0001 )
+C_C4            C4(1=$N_0005 2=0 )
+C_C5            C5(1=$N_0004 2=0 )
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+ERROR -- Node $N_0003 is floating
+ERROR -- Node $N_0004 is floating
+ERROR -- Node $N_0005 is floating

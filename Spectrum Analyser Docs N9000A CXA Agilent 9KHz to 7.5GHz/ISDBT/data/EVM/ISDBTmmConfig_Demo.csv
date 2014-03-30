@@ -1,0 +1,13 @@
+Mode,3
+Guard Interval, 1/4
+Segment Num,33
+SuperSeg Num,3
+TypeA Num,2
+Vector-Center Frequency Difference,-10,-3,-2,-1,0,1,2,3,10
+Vector-Center SubChannel,1,4,7,10,13,16,19
+Vector-Modulation Per Layer,QPSK,16QAM,QPSK,QPSK,16QAM,QPSK
+Vector-Modulation Per Seg,QPSK,QPSK,QPSK,QPSK,QPSK,QPSK,QPSK
+Vector-Seg Num Per Layer,1,12,0,1,12,0
+Vector-Seg Num Per SuperSeg,13,7,13
+Vector-SuperSeg Type,A,B,A
+Vector-Partial Reception,true,true

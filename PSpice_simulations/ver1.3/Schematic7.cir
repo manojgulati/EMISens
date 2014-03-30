@@ -1,0 +1,23 @@
+* C:\Users\manojg\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.3\Schematic7.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Feb 19 22:39:21 2014
+
+
+
+** Analysis setup **
+.ac LIN 100 100 1000.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic7.net"
+.INC "Schematic7.als"
+
+
+.probe
+
+
+.END

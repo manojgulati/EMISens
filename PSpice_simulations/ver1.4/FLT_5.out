@@ -1,0 +1,113 @@
+
+**** 02/21/14 23:08:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Omkar\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_5.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Feb 21 22:51:42 2014
+
+
+
+** Analysis setup **
+.ac LIN 101 10 350.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "FLT_5.net"
+
+**** INCLUDING FLT_5.net ****
+* Schematics Netlist *
+
+
+
+V_V4         $N_0001 0 DC 0V AC 10V 
+R_R1         0 $N_0002  50  
+R_R5         $N_0003 0  50  
+C_C3         0 $N_0003  .1uF  
+C_C1         $N_0004 $N_0002  .1uF  
+R_R7         $N_0001 $N_0004  50  
+
+**** RESUMING FLT_5.cir ****
+.INC "FLT_5.als"
+
+
+
+**** INCLUDING FLT_5.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V4            V4(+=$N_0001 -=0 )
+R_R1            R1(1=0 2=$N_0002 )
+R_R5            R5(1=$N_0003 2=0 )
+C_C3            C3(1=0 2=$N_0003 )
+C_C1            C1(1=$N_0004 2=$N_0002 )
+R_R7            R7(1=$N_0001 2=$N_0004 )
+.ENDALIASES
+
+
+**** RESUMING FLT_5.cir ****
+.probe
+
+
+.END
+
+**** 02/21/14 23:08:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Omkar\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_5.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   ($N_0004)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 02/21/14 23:08:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Omkar\Dropbox\EMI_Sense_Design_project\PSpice_simulations\ver1.4\FLT_5.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

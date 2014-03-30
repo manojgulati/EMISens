@@ -1,0 +1,7 @@
+* Schematics Netlist *
+
+
+
+R_R1         0 $N_0001  100  
+C_C1         $N_0002 $N_0001  .1uF  
+V_V3         $N_0002 0 DC 0V AC 230V 

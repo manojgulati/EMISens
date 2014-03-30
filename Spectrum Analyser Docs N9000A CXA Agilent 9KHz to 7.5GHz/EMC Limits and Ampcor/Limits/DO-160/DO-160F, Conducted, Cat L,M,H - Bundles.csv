@@ -1,0 +1,24 @@
+Limit
+"DO-160F, Conducted, Interconnecting Bundles"
+"Catagory L, M, & H"
+,
+,01
+Type, Upper
+X Axis Unit, MHz
+Amplitude Unit, dBuA
+Frequency Interpolation, Logarithmic
+Amplitude Interpolation, Logarithmic
+X Control, Fixed
+Y Control, Fixed
+Margin, 0
+X Offset, 0
+Y Offset, 0
+DATA
+0.150000, 73.00
+2.000000, 40.00
+30.000000, 40.00
+30.000000, 50.00
+108.000000, 50.00
+108.000000, 40.00
+152.000000, 40.00
+
